@@ -1,8 +1,10 @@
 spring:
   datasource:
-    password: root
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/fornecedor
     username: root
-    url: 'jdbc:mysql://localhost:3306/fornecedor'
+    password: root
   jpa:
-    hibernate:
-      ddl-auto: update
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
